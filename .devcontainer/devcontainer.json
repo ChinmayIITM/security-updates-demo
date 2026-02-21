@@ -1,15 +1,12 @@
 {
-  "name": "ga2-1539cf",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
-  },
+  "name": "security-updates-demo",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "customizations": {
     "vscode": {
       "extensions": [
-        "astral-sh.uv",
         "ms-python.python"
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "postCreateCommand": "pip install fastapi uvicorn"
 }
